@@ -55,6 +55,16 @@ There was a link between the Employees sheet and Perfomance sheet, the `"Employe
 
 In tableau I used a Full/Inner Join for the Employees Sheet and Perfomance Sheet paired with a Left Join on the Eduction level sheet using the columns mentioned above to establish a relationship in the data respectively.
 
+- Attrition Rate
+SUM([Attrition Flag]) / COUNT([Employee ID])
+
+
+- Attrition Flag
+IF [Attrition] = "Yes" THEN 1
+ELSE 0
+END
+
+
 
 
 
