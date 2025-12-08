@@ -82,7 +82,7 @@ SUM([Attrition Flag]) / COUNTD([Employee ID])
 ```
 <br>
 
-- **Normalized Salary** - This scales down the salary to a scale 0-1 to provide direct comparison with the attririon. This give us more accuracy compared to using just raw averages, which in all honesty could work just fine here but could also dilute context as it is influence by group sizes and salary magnitude. Normalization preserves the shape of the salary trend and enables a clear, relative comparison across groups, ensuring the relationship between compensation and attrition is accurately represented.   
+- **Normalized Salary** - This scales down the salary to a scale 0-1 to provide direct comparison with the attririon rate. It preserves the shape of the salary trend and enables a clear, relative comparison across groups, ensuring the relationship between compensation and attrition is accurately represented. I interchange between using the average salary and this in my visualizations.   
 ```
 AVG([Salary]) / WINDOW_MAX(AVG([Salary]))
 ```
@@ -117,8 +117,14 @@ The analysis results are summarized as follows:
   Attrition is concentrated in Technology and Sales, particularly among junior/mid-level roles where pay lags behind expectations. Senior roles and management positions show both lower attrition and higher compensation, highlighting the importance of career progression.
 6. **Marital Status and Lifestyle Factors**  
    Single employees show higher attrition rates, which may reflect different career expectations or mobility compared to married and employees. Distance from the workplace may also contribute, though the evidence here is weaker.
+<br><br><br>
 
-
+### Recommendations 
+---
+Based on the analysis, I recommend the following actions:
+- Compensate the younger employees better and offer career growth opportunities with promotions. The attrition is very obvious here as maybe they were promised somethings by the management and it wasn't fulfilled.
+- Hiring more single employees don't seem to help the cause so hiring of more divorced/married employeeas would also help cut attrition in the company.
+- Implement a customer segmentation strategy to target high-LTV customers effectively.
 
 
 
